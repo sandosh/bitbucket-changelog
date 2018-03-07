@@ -273,7 +273,7 @@ function renderJiras(pr) {
 			return ` (${jiras.join(', ')})`
 		}
 	} else {
-		return ''
+		throw Error('Jira ticket not found')
 	}
 }
 
